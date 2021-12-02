@@ -4,31 +4,30 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(schema = "users")
+@Table(name = "users")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "todo_id")
-    public long id;
+    @Column(name = "id")
+    public int id;
 
-    @Column(name = "title", length = 128, nullable = false)
+    @Column(name = "title")
     public String title;
 
-    @Column(name = "description", length = 512)
+    @Column(name = "description")
     public String description;
 
-    @Column(name = "insert_date_time", nullable = false)
+    @Column(name = "insert_date_time")
     public LocalDateTime insertDateTime = LocalDateTime.now();
 
-    @Column(name = "completed", nullable = false)
+    @Column(name = "completed")
     public boolean completed;
 
     public long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

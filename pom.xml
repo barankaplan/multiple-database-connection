@@ -25,6 +25,21 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.csystem</groupId>
+            <artifactId>org-csystem-util-exception</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.csystem</groupId>
+            <artifactId>org-csystem-util-console</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.csystem</groupId>
+            <artifactId>org-csystem-util-data</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ojdbc8</artifactId>
             <scope>runtime</scope>
